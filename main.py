@@ -53,8 +53,7 @@ f = open('count_digits.txt', 'w')
 f.close()
 for i in range(len(ranges)):
     min_border, max_border = min(ranges[i]), max(ranges[i])
-    print(
-        f'Диапазон {i + 1} - [{min_border}, {max_border}) -- Количество чисел в диапазоне - {counter_digits_in_ranges[i]}')
+    print(f'Диапазон {i + 1} - [{min_border}, {max_border}) -- Количество чисел в диапазоне - {counter_digits_in_ranges[i]}')
 
 print(f'Количество сгенерированных чисел, меньших 1: {len(numbers)}')
 counter_digits_in_ranges = [str(num) + '\n' for num in counter_digits_in_ranges]
